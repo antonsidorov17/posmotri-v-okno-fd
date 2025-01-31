@@ -31,6 +31,7 @@ html {
 .content__list-container {
   height: 288px;
   overflow: scroll;
+  position: relative;
 }
 
 .result {
@@ -81,10 +82,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-}
-
-.content__list-container {
-  height: 298px;
 }
 
 .content__video-card-thumbnail {
@@ -233,7 +230,6 @@ fieldset {
   justify-content: center;
   margin-right: 5px;
   border: 1px solid white;
-  display: inline-block;
   vertical-align: middle;
   width: 18px;
   height: 18px;
@@ -291,10 +287,6 @@ fieldset {
 
 .content__list-item:hover {
   text-decoration: underline;
-}
-
-.content__list-container {
-  position: relative;
 }
 
 .content__video-card:hover {
