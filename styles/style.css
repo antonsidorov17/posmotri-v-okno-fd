@@ -29,8 +29,9 @@ html {
 }
 
 .content__list-container {
-  height: 288px;
-  overflow: scroll;
+  max-height: 288px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -82,6 +83,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 }
 
 .content__video-card-thumbnail {
@@ -123,7 +125,6 @@ ol {
 }
 
 .result__video-container {
-  margin-bottom: 16px;
   width: 711px;
   height: 386px;
 }
@@ -185,10 +186,6 @@ ol {
   white-space: nowrap;
 }
 
-.search-form {
-  display: flex;
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -229,6 +226,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   margin-right: 5px;
+  margin-top: 5px;
   border: 1px solid white;
   vertical-align: middle;
   width: 18px;
@@ -240,12 +238,10 @@ fieldset {
   content: "";
   border: 1px solid white;
   display: inline-block;
-  margin-right: 5px;
   vertical-align: middle;
   width: 18px;
   height: 18px;
   background-color: white;
-  position: absolute;
 }
 
 .button {
