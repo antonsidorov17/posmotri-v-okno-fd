@@ -23,8 +23,7 @@ html {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
+  grid-template-columns: 711px 1fr;
   grid-template-areas: "result content__details";
   gap: 30px;
 }
@@ -43,7 +42,6 @@ html {
   display: flex;
   flex-direction: column;
   grid-area: content__details;
-  min-height: 100%;
   width: 100%;
   max-height: 534px;
 }
@@ -113,6 +111,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .content__video-card {
@@ -206,6 +205,7 @@ fieldset {
   display: flex;
   width: fit-content;
   cursor: pointer;
+  align-items: end;
 }
 
 .search-form__textfield {
@@ -260,6 +260,7 @@ fieldset {
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+  align-self: end;
 }
 
 .search-form__submit-button {
@@ -294,4 +295,16 @@ fieldset {
 
 .content__list-container {
   position: relative;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:active {
+  background-color: rgba(84, 80, 80, 1);
 }
