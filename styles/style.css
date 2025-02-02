@@ -24,15 +24,14 @@ html {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
   grid-template-areas: "result content__details";
   gap: 30px;
 }
 
 .content__list-container {
-  max-height: 288px;
   overflow: auto;
   position: relative;
+  height: 298px;
 }
 
 .result {
@@ -85,7 +84,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  min-height: 54px;
 }
 
 .content__video-card-thumbnail {
@@ -112,7 +110,6 @@ ol {
   text-align: left;
   text-decoration-skip-ink: none;
   width: 196px;
-  height: 17px;
   margin-top: 6px;
 }
 
@@ -168,7 +165,7 @@ ol {
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
-  text-underline-position: from-font;
+  margin-bottom: 5px;
 }
 
 .content__card-link {
@@ -244,7 +241,6 @@ fieldset {
   border: 1px solid white;
   position: relative;
   margin-right: 5px;
-  margin-top: 5px;
   vertical-align: middle;
   background-color: transparent;
 }
@@ -303,6 +299,6 @@ fieldset {
   background-color: rgba(84, 80, 80, 1);
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
